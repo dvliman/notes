@@ -1,0 +1,62 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04
+
+sudo apt update
+
+sudo apt install nginx
+
+sudo ufw status
+
+sudo ufw allow 'Nginx Full'
+
+systemctl status nginx
+
+systemctl stop nginx
+
+systemctl start nginx
+
+systemctl restart nginx
+
+systemctl reload nginx
+
+systemctl enable nginx
+
+setting up server blocks
+    mkdir -p /var/www/example.com/html
+
+assing ownership of the directory to $USER environment variable
+    sudo chown -R $USER:$USER /var/www/examples.com/html
+
+web root permission
+    sudo chmod -R 755 /var/www/example.com
+
+/etc/nginx/sites-available/example.com
+
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/example.com/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name example.com www.example.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled
+
+To avoid a possible hash bucket memory problem that can arise from adding additional server names, it is necessary to adjust a single value in the /etc/nginx/nginx.conf file. Open the file:
+
+/etc/nginx/nginx.conf
+http {
+    ...
+    server_names_hash_bucket_size 64;
+    ...
+}
+
+nginx -t check if any error
+
+systemctl restart nginx
+
