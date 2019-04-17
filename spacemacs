@@ -2,9 +2,13 @@ SPC t n		show line number
 SPC f e d 	open .spacemacs file
 , s c 		cider-clear-repl-buffer
 
+emacs commands 
+C-o		jump back from definition
+
 VIM commands 
 gcc		command 1 line
 gc		visual, then command multiple lines
+gd 		jump to definition 
 
 
 
