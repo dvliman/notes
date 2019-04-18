@@ -4,6 +4,7 @@ SPC f e d 	open .spacemacs file
 
 emacs commands 
 C-o		jump back from definition
+C-c C-c		eval current sexp 
 
 VIM commands 
 gcc		command 1 line

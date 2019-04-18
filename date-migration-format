@@ -1,1 +1,2 @@
- date +"%Y%m%d%k%M"
+date +"%Y%m%d%k%M"
+date +%s	get current unix timestamp
