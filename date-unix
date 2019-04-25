@@ -1,0 +1,6 @@
+date +"%Y%m%d%k%M"
+date +%s	get current unix timestamp
+
+
+date +%Y-%m-%dT%H:%M:%S%z 	iso8601 format
+date -u +"%Y-%m-%dT%H:%M:%SZ" 	iso8601 format
