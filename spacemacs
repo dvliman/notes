@@ -14,6 +14,7 @@ gcc		command 1 line
 gc		visual, then command multiple lines
 gd 		jump to definition 
 
+M-x neotree-find => show current file in neotree
 
 
 resources
