@@ -1,0 +1,9 @@
+docker image rmi -f [tag]
+
+docker run [image|tag]
+
+docker image ls
+
+docker image prune
+
+
