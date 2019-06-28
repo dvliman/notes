@@ -1,3 +1,6 @@
+sudo su - postgres
+psql -l
+
 function tail-postgres
         tail -f /usr/local/var/log/postgres.log
 end
