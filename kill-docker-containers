@@ -1,0 +1,5 @@
+fish shell
+docker kill (docker ps -q)
+
+or
+docker kill $(docker ps -q)
