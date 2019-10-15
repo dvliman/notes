@@ -7,3 +7,5 @@ end
 
 postgresql.conf => log_statement = all
 
+
+ env PGPASSWORD=xxx pg_dump -h xxx -U xxx yyy -t xxx --schema-only
