@@ -1,0 +1,4 @@
+brew install gettext
+brew link --force gettext 
+
+envsubst is included in gettext package

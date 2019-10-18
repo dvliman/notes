@@ -1,0 +1,8 @@
+stat -f "%OLp" <file>
+	bsd/osx
+
+stat --format '%a' <file>
+	linux
+
+ stat -c '%a' <file>
+	busybox
