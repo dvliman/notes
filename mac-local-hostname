@@ -1,0 +1,1 @@
+scutil --get LocalHostName
