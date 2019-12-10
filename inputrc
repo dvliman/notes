@@ -1,0 +1,3 @@
+set revert-all-at-newline on
+
+When the variable is off, if you pull a line from your command history using the reverse search feature, edit it, but then decide to search instead for another line, the edit you made is preserved in the history. 
