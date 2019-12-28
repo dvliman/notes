@@ -1,0 +1,8 @@
+command + click                 => function definition
+option + click 			=> function tooltip
+control + command + shift + /  	=> function tooltip
+control + command + left      	=> jump back
+control + command + right       => jump forward
+shift + command + f             => find navigator
+command + f  			=> search
+
