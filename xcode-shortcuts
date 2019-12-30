@@ -1,9 +1,15 @@
-command + click                 => function definition
-option + click 			=> function tooltip
-control + command + shift + /  	=> function tooltip
-control + command + left      	=> jump back
-control + command + right       => jump forward
-shift + command + f             => find navigator
-command + f  			=> search
-option + command + enter        => swift ui preview
+keyboard shortcuts
+==================
+	control + command + shift + /  	=> function tooltip
+	control + command + left      	=> jump back
+	control + command + right       => jump forward
+	shift + command + f             => find navigator
+	command + f  			=> search
+	option + command + enter        => swift ui preview
+	command + shift + j 		=> reveal in project navigator
+
+with mouse
+=========
+	command + click                 => function definition
+	option + click 			=> function tooltip
 
