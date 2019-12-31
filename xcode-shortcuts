@@ -7,6 +7,7 @@ keyboard shortcuts
 	command + f  			=> search
 	option + command + enter        => swift ui preview
 	command + shift + j 		=> reveal in project navigator
+	command + shift + o		=> open quickly
 
 with mouse
 =========
