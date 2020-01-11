@@ -1,0 +1,16 @@
+kubectl expose deployment <deployment-name> --type=LoadBalancer --name=<service-name>
+
+kubectl get services <service-name>
+kubectl get replicasets
+kubectl get deployments <deployment-name>
+kubectl get pods -n <namespace> | grep <pod-prefix>
+kubectl get pods -n <namespace> -o wide (shows the node each pod running on)
+
+kubectl describe deployments <deployment-name>
+kubectl describe replicasets
+
+kubectl port-forward -n <namespace> <pod> 8090:8080 <local:remote>
+kubectl -n <namespae> exec -it <pod> -- bash 
+
+kubectl logs -f -n <namespace> <pod>
+kubectl logs -n <namespace> -l app=service <selector-key=selector-value>
