@@ -13,4 +13,4 @@ kubectl port-forward -n <namespace> <pod> 8090:8080 <local:remote>
 kubectl -n <namespae> exec -it <pod> -- bash 
 
 kubectl logs -f -n <namespace> <pod>
-kubectl logs -n <namespace> -l app=service <selector-key=selector-value>
+kubectl logs -n <namespace> -l app=<selector-prefix>
