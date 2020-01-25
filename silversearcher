@@ -1,1 +1,2 @@
 ag --ignore-dir={build} -G '.java$' ".name\(\""
+ag --ignore "*.tf" "arn:aws"
