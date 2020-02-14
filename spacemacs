@@ -1,22 +1,29 @@
+spacemacs specifics
+~~~~~~~~~~~~~~~~~~~
 SPC t n		show line number
 SPC f e d 	open .spacemacs file
 SPC f e R       reload .spacemacs
 , s c 		cider-clear-repl-buffer
 SPC m t p       run "go test" for current package
 SPC m t t       run “go test” for the function you’re currently in (while you’re in a _.test.go file)
+
 emacs commands 
+~~~~~~~~~~~~~~
 C-o		jump back from definition
 C-c C-c		eval current sexp 
 C-c C-e		org-mode export
+C-q <TAB>	insert tab at current buffer
 
-M - . jump to def 
-M - * jump back
+M - . 			jump to def 
+M - * 		 	jump back
+M-x neotree-find 	show current file in neotree
+
 VIM commands 
+~~~~~~~~~~~~
 gcc		command 1 line
 gc		visual, then command multiple lines
 gd 		jump to definition 
 
-M-x neotree-find => show current file in neotree
 
 
 resources
