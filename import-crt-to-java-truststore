@@ -1,0 +1,2 @@
+cd /Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/lib/security
+keytool -import -alias ca -file root-r6.crt -keystore cacerts -storepass changeit
