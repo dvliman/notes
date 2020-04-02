@@ -32,7 +32,9 @@ gcc		command 1 line
 gc		visual, then command multiple lines
 gd 		jump to definition 
 
-
+cider
+~~~~
+C-C M-p or M-x cider-repl-history
 
 resources
 https://gist.github.com/adham90/0d85d023f9d4f1dd28ef
