@@ -1,3 +1,11 @@
 prune deleted branches
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep upstream) | awk '{print $1}' | xargs git branch -d
 	git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
+git log -- docroot/user_bars/logo.png   # show all changes of a file, work even if the file is deleted  
+git log -1 -- docroot/user_bars/logo.png # limit the output of Git log to the last commit, i.e. the commit which delete the file; -1 to see only the last commit, use -2 to see the last 2 commits etc...
+
+git checkout f5ac172e docroot/user_bars/logo.png # warn: this will discard all changes in working directory
+
+If there are many revisions, you can view content of the file in a specific revision by the following command:
+git show f5ac172e docroot/user_bars/logo.png
