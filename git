@@ -9,3 +9,6 @@ git checkout f5ac172e docroot/user_bars/logo.png # warn: this will discard all c
 
 If there are many revisions, you can view content of the file in a specific revision by the following command:
 git show f5ac172e docroot/user_bars/logo.png
+
+git log --reverse
+git shortlog --summary --numbered --email
