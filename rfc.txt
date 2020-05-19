@@ -6,3 +6,6 @@ https://www.ietf.org/rfc/rfc3161.txt
 	time-stamp protocol (TSP)
 	internet x.509 public key infrastructure
 
+
+https://tools.ietf.org/html/rfc4510
+	LDAP
