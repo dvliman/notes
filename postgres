@@ -6,6 +6,17 @@ FROM pg_stat_activity
 WHERE pg_stat_activity.datname = 'studio'
   AND pid <> pg_backend_pid();
 
+select pid as process_id, 
+       usename as username, 
+       datname as database_name, 
+       client_addr as client_address, 
+       application_name,
+       backend_start,
+       state,
+       state_change
+from pg_stat_activity;
+
+SELECT count(1) FROM pg_stat_activity;
 
 function tail-postgres
         tail -f /usr/local/var/log/postgres.log
