@@ -1,6 +1,12 @@
 sudo su - postgres
 psql -l
 
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'studio'
+  AND pid <> pg_backend_pid();
+
+
 function tail-postgres
         tail -f /usr/local/var/log/postgres.log
 end
