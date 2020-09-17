@@ -12,3 +12,5 @@ git show f5ac172e docroot/user_bars/logo.png
 
 git log --reverse
 git shortlog --summary --numbered --email
+
+git ls-tree -r -t -l --full-name HEAD | sort -n -k 4 | tail -n 10
