@@ -1,0 +1,7 @@
+file-descriptors-limits
+/etc/sysctl.d/
+fs.file-max = <number>
+
+/etc/security/limits.conf
+* soft nofile 65536
+* hard nofile 65536

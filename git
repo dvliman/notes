@@ -15,4 +15,4 @@ git shortlog --summary --numbered --email
 
 git ls-tree -r -t -l --full-name HEAD | sort -n -k 4 | tail -n 10
 
-curl -s https://api.github.com/orgs/twitter/repos\?per_page\=200 | perl -ne 'print "$1\n" if (/"ssh_url": "([^"]+)/)' | xargs -n 1 git clone
+curl -H "Authorization: token " -s https://api.github.com/orgs/org/repos\?per_page\=100\&page=0 | perl -ne 'print "$1\n" if (/"ssh_url": "([^"]+)/)' | xargs -n 1 git clone
