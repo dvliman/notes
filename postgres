@@ -50,3 +50,7 @@ host    replication     all             ::1/128                 trust
 
 
 SELECT PostGIS_full_version();
+
+
+pg_dump -h localhost -p 2345 -U postgres -Ft dbname > dbname.tar
+pg_restore -h localhost -p 2345 -U postgres -Ft -d dbname < dbname.tar
